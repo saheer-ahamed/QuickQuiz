@@ -1,0 +1,288 @@
+.navTitle {
+    height: 5rem;
+    left: 2rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+header h2 {
+    font-weight: 800;
+    font-size: 1.6rem;
+}
+
+.designedBy {
+    position: absolute;
+    height: 5rem;
+    left: 2rem;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.designedBy h3 {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.main h3 {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.main .inputContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 8px 30px #dddcdc;
+    border-radius: 1.5rem;
+    padding: .9rem 1rem;
+}
+
+.main input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: .9rem;
+    color: #8692A6;
+    width: 17rem;
+}
+
+.main input::placeholder {
+    color: #8692A6;
+}
+
+.main .btn {
+    padding: .9rem 2.5rem;
+    background: #8692A6;
+    border-radius: 2rem;
+    color: white;
+    font-size: .9rem;
+    border: none;
+}
+
+.main .btn:hover {
+    opacity: .8;
+}
+
+.selectCircle {
+    display: flex;
+    gap: 1rem;
+}
+
+.choiceCircle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    padding: 2rem;
+    border-radius: 50%;
+    border: 4px solid #8692A6;
+    font-size: 2.3rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.choiceCircle:hover {
+    background: hsla(120, 1%, 77%, .5);
+}
+
+.btn.btn-next {
+    padding: 1rem 4rem;
+}
+
+.main .question {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.selectOptions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.callingUser {
+    font-size: 1.5rem;
+}
+
+main h3.thankyou {
+    margin-top: -1.5rem;
+    font-size: 2rem;
+}
+
+.showResults {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.showResults .correctScore {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.showResults .correctScore h4 {
+    font-size: 1.4rem;
+}
+
+.iconContainer {
+    width: 3rem;
+    height: 3rem;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 0 8px 30px #dddcdc;
+}
+
+.iconContainer img {
+    width: 2rem;
+}
+
+.btn.btn-oncemore {
+    border-radius: 1.2rem;
+    padding: 1rem 2.6rem;
+}
+
+@media screen and (max-width: 768px) {
+
+    .navTitle,
+    .designedBy {
+        position: static;
+        justify-content: center;
+    }
+
+    section {
+        height: calc(100vh - 10rem);
+    }
+
+    .main h3 {
+        font-size: 1.6rem;
+    }
+
+    .btn.btn-next {
+        padding: .7rem 3rem;
+    }
+
+    .choiceCircle {
+        padding: 1.8rem;
+    }
+
+    .callingUser {
+        font-size: 1.6rem;
+    }
+
+    .main h3.thankyou{
+        font-size: 1.8rem;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    header h2 {
+        font-size: 1.2rem;
+    }
+
+    .main h3 {
+        font-size: 1.3rem;
+    }
+
+    .main input {
+        width: 14rem;
+    }
+
+    .main .btn {
+        padding: .7rem 1.5rem;
+        font-size: .8rem;
+    }
+
+    .choiceCircle {
+        padding: 1.5rem;
+        font-size: 1.8rem;
+    }
+
+    .btn.btn-next {
+        padding: .7rem 2.5rem;
+    }
+
+    .designedBy h3 {
+        font-size: .8rem;
+    }
+
+    .main .question {
+        font-size: 2.8rem;
+    }
+
+    .callingUser {
+        font-size: 1.3rem;
+    }
+
+    .main h3.thankyou{
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main h3 {
+        text-align: center;
+    }
+
+    .main .question {
+        font-size: 2rem;
+    }
+
+    .choiceOption.btn {
+        padding: .7rem;
+    }
+
+    .callingUser {
+        font-size: .8rem;
+    }
+
+    .main h3.thankyou{
+        font-size: 1rem;
+    }
+
+    .showResults .correctScore h4 {
+        font-size: 1rem;
+    }
+
+    .showResults .correctScore p{
+        font-size: .6rem;
+    }
+    
+    .iconContainer {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .iconContainer img{
+        width: 1rem;
+    }
+
+}
